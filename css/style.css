@@ -1,6 +1,7 @@
 /* Garant border-box */
 *{
 	box-sizing: border-box;
+	box-shadow:none;
 }
 /* ==== HEADER ==== */
 .header{
