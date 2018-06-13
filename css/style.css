@@ -31,38 +31,14 @@
 	text-align: center;
 }
 
-.logo__link{
+.logo_link{
 	text-decoration: none;
 	width: 100%;
 	text-align: center;
 	color: white;
 	text-transform: uppercase;
 }
-
-.button{
-	background-color: white;
-	border: none;
-	color: black;
-	font-weight: 700;
-	border-radius: 0.5em;
-}
-
-.button:hover{
-	cursor: pointer;
-	border-radius: 0.1em;
-	transition: border-radius 0.5s;
-}
-
-.button--navbar{
-	font-size: 1.5em;
-	padding: 0.5em 0.5em;
-	margin-right: 5%;
-}
-
-.button--search{
-	padding: 0.5em;
-}
-.navbar__menu{
+.navbar_menu{
 	display: none;
 	position: absolute;
 	top:100%;
@@ -72,25 +48,24 @@
 	padding: 0;
 	width: 100%;
 }
-
-.navbar__menu__item{
+.navbar_menu_item{
 	width: 100%;
 	text-align: center;
 	padding:0.3em 0;
 }
 
-.navbar__menu__item:hover{
+.navbar_menu_item:hover{
 	background-color:black;
 	transition: background-color 1s;
 }
 
-.navbar__menu__item:hover>a{
+.navbar_menu_item:hover>a{
 	color:white;
 	transition: color 1s;
 
 }
 
-.navbar__menu__item__link{
+.navbar_menu_item_link{
 	text-decoration:none;
 	color: rgba(255,255,255,0.7);
 	text-transform: uppercase;
