@@ -51,7 +51,7 @@ body{
 	width:100%;
 	height: 940px;
 	padding: 2% 2% 2% 2%;
-	background-color: #252525;
+	background-color: #2d9fe0;
 	color: white;
 }
 .about_title{
@@ -69,7 +69,6 @@ body{
 	z-index: 5;
 	position: relative;
 	font-weight:bold;
-    text-shadow: 1px 1px #252525;
 }
 .adabyron{
 	width: 48%;
@@ -92,44 +91,11 @@ body{
 	float:left;
 	padding-right: 2%;
 }
-.about_fundo_ada{
-	width:100%;
-	height:100%;
-	position: absolute;
-	background: url(../img/adabyron.jpg) no-repeat;
-	background-size: 46% 51%;
-	opacity: 0.50;
-}
-.about_fundo_emp{
-	width:100%;
-	height:100%;
-	position: absolute;
-	background: url(../img/empresa.jpg) no-repeat;
-	background-size: 46% 51%;
-	opacity: 0.50;
-}
-.about_fundo_ser{
-	width:100%;
-	height:100%;
-	position: absolute;
-	background: url(../img/servicos.jpg) no-repeat;
-	background-size: 46% 65%;
-	opacity: 0.50;
-}
-.about_fundo_mej{
-	width:100%;
-	height:100%;
-	position: absolute;
-	background: url(../img/mej.jpg) no-repeat;
-	background-size: 46% 65%;
-	opacity: 0.50;
-}
 .about_title2{
 	text-align:center;
 	font-size:100%;
 	position: relative;
 	z-index: 5;
-    text-shadow: 1px 1px #252525;
 }
 legend {
   font-weight:bold;
@@ -156,6 +122,16 @@ fieldset{
 	height:300px;
 	margin-left:25%;
 	border-color: white;
+}
+
+.portfolio {
+	width:100%;
+	height: 550px;
+	padding: 2% 2% 2% 2%;
+	background-color: white;
+	color: #2d9fe0;
+	display:block;
+	position:relative;
 }
 /*MAIN*/
 
