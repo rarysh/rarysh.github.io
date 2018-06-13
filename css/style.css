@@ -4,60 +4,144 @@
 }
 /* ==== HEADER ==== */
 .header{
-	width:100%;
-	display: flex;
-	align-items: left;
-	height: auto;
-	background-color: #A3BCF9;
-	padding-bottom: 0.25em;
+	background-color: white;
+	box-shadow: 0px 0px 5px grey;
+	height:80px;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
-.navbar_menu{
-	display: none;
-	position: absolute;
-	top:100%;
-	align-items: right;
-	padding: 0;
-	width: 100%;
+body{
+	margin:0;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 .navbar{
+	justify-content: space-between;
 	width: 100%;
 	margin:auto;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin-top: 1em;
 	position: relative;
+	padding-right: 2%;
 }
 .logo{
-	display: flex;
-	padding-left: 5%;
-	align-items: center;
-	text-align: center;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.navbar_menu{
+	list-style-type: none;
+    margin: 0;
+    padding: 2%;
+	font-size: 120%;
+	
 }
 .logo_link{
-	text-decoration: none;
-	width: 100%;
-	text-align: center;
-	color: white;
-	text-transform: uppercase;
 }
 .navbar_menu_item{
-	width: 100%;
-	text-align: center;
-	padding:0.3em 0;
+	float:left;
+	padding-right: 3%;
+	padding-left: 3%;
+    border-right:1px solid #2d9fe0;
+}
+.navbar_menu_item:last-child {
+    border-right: none;
 }
 .navbar_menu_item:hover{
-	background-color:black;
-	transition: background-color 1s;
 }
 .navbar_menu_item:hover>a{
-	color:white;
-	transition: color 1s;
 
 }
 .navbar_menu_item_link{
-	text-decoration:none;
-	color: rgba(255,255,255,0.7);
 	text-transform: uppercase;
 	font-weight: 500;
+	text-decoration:none;
+	color: #2d9fe0;
+	font-weight:bold;
 }
+.about{
+	width:100%;
+	height: 900px;
+	padding: 2% 2% 2% 2%;
+	background-color: grey;
+	color: white;
+}
+.about_title{
+	text-align:center;
+	font-size:140%;
+	position: relative;
+	z-index: 5;
+}
+.about_txt{
+	text-indent: 1.5em;
+	text-align:justify;
+	vertical-align:middle;
+	padding: 2% 2% 2% 4%;
+	font-size: 140%;
+	z-index: 5;
+	position: relative;
+	font-weight:bold;
+}
+.adabyron{
+	width: 48%;
+	float:left;
+	padding-right:2%;
+}
+.aempresa{
+	width: 48%;	
+	float:left;
+	padding-right: 2%;
+}
+.omej{
+	width: 48%;	
+	float:left;
+	padding-right: 2%;
+	clear:left;
+}
+.servicos{
+	width: 48%;	
+	float:left;
+	padding-right: 2%;
+}
+.about_fundo_ada{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background: url(../img/adabyron.jpg) no-repeat;
+	background-size: 46% 55%;
+	opacity: 0.50;
+}
+.about_fundo_emp{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background: url(../img/empresa.jpg) no-repeat;
+	background-size: 46% 55%;
+	opacity: 0.50;
+}
+.about_fundo_ser{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background: url(../img/servicos.jpg) no-repeat;
+	background-size: 46% 65%;
+	opacity: 0.50;
+}
+.about_fundo_mej{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background: url(../img/mej.jpg) no-repeat;
+	background-size: 46% 65%;
+	opacity: 0.50;
+}
+.about_title2{
+	text-align:center;
+	font-size:100%;
+	position: relative;
+	z-index: 5;
+}
+.portfolio{
+	width:100%;
+	height: 400px;
+	padding: 2% 2% 2% 2%;
+	background-color: #2d9fe0;
+}
+/*MAIN*/
+
+
