@@ -1,18 +1,23 @@
 /* Garant border-box */
-
 *{
 	box-sizing: border-box;
 }
-
-
 /* ==== HEADER ==== */
 .header{
 	width:100%;
 	display: flex;
-	align-items: center;
+	align-items: left;
 	height: auto;
 	background-color: #A3BCF9;
 	padding-bottom: 0.25em;
+}
+.navbar_menu{
+	display: none;
+	position: absolute;
+	top:100%;
+	align-items: right;
+	padding: 0;
+	width: 100%;
 }
 .navbar{
 	width: 100%;
@@ -23,14 +28,12 @@
 	margin-top: 1em;
 	position: relative;
 }
-
 .logo{
 	display: flex;
 	padding-left: 5%;
 	align-items: center;
 	text-align: center;
 }
-
 .logo_link{
 	text-decoration: none;
 	width: 100%;
@@ -38,33 +41,20 @@
 	color: white;
 	text-transform: uppercase;
 }
-.navbar_menu{
-	display: none;
-	position: absolute;
-	top:100%;
-	background-color: rgba(0,0,0,0.8);
-	z-index: 5;
-	list-style-type: none;
-	padding: 0;
-	width: 100%;
-}
 .navbar_menu_item{
 	width: 100%;
 	text-align: center;
 	padding:0.3em 0;
 }
-
 .navbar_menu_item:hover{
 	background-color:black;
 	transition: background-color 1s;
 }
-
 .navbar_menu_item:hover>a{
 	color:white;
 	transition: color 1s;
 
 }
-
 .navbar_menu_item_link{
 	text-decoration:none;
 	color: rgba(255,255,255,0.7);
