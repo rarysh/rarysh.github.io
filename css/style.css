@@ -17,6 +17,7 @@ html{
 }
 body{
 	margin:0;
+	text-shadow: 1px 1px 1px lightgrey;
 }
 .navbar{
 	justify-content: space-between;
@@ -41,6 +42,11 @@ body{
 	padding-left: 2%;
     border-right:1px solid #2d9fe0;
 }
+.navbar_menu_item:hover>a{
+	color:#252525;
+	transition: color 1s;
+
+}
 .navbar_menu_item:last-child {
     border-right: none;
 }
@@ -53,7 +59,7 @@ body{
 }
 .about{
 	width:100%;
-	height: 650px;
+	height: 800px;
 	padding: 5% 2% 2% 2%;
 	background-color: #2d9fe0;
 	background-image: url("../img/bgsb3.jpg");
@@ -78,26 +84,25 @@ body{
 	font-weight:bold;
 }
 .about_img{
+	margin-top: -4%;
 	border-radius:50px;
 	vertical-align:middle;
-	margin-right:2%;
+	margin-right:10%;
 	margin-left:2%;
 }
 .adabyron{
-	width: 48%;
-	height:370px;
-	background-color:white;
+	width: 80%;
+	height:260px;
+	margin-left:10%;
 	border-radius:50px;
-	float:left;
 	padding-right:2%;
 }
 .aempresa{
-	width: 48%;
-	height:370px;
-	background-color:white;
+	width: 80%;
+	height:270px;
 	border-radius:50px;
-	float:left;
 	margin-left:4%;
+	margin-left:10%;
 }
 .about_title2{
 	text-align:center;
