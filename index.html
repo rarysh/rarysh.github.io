@@ -7,6 +7,8 @@
 	<title>byron.solutions</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
   </head>
   <body>
 		<header class="header">
@@ -25,17 +27,45 @@
 			</nav>
 		</header>
 		<div class="carrossel">
-			<!--<ul>
-				<li>
-					<img id="Fator" class="carrossel_img" src="img/screenshot3.png" alt="" style="display: none;">
-				</li>
-				<li>
-					<img id="Forró" class="carrossel_img" src="img/screenshot1.png" alt="" style="display: inline;">
-				</li>
-				<li>
-					<img id="Website" class="carrossel_img" src="img/screenshot2.png" alt="" style="display: none;">
-				</li>
-			</ul>-->
+			<script>
+				window.location = "#wall-1";
+			</script>
+			<div class="wall wall-1" id="wall-1">
+				<div class="iconback">
+					<a href="#wall-3">
+						<i class="fa fa-chevron-circle-left icon" style="font-size:50px;"></i>
+					</a>
+				</div>
+				<div class="iconfoward">
+					<a href="#wall-2">
+						<i class="fa fa-chevron-circle-right icon" style="font-size:50px;"></i>
+					</a>
+				</div>
+			</div>
+			<div class="wall wall-2" id="wall-2">
+				<div class="iconback">
+					<a href="#wall-1">
+						<i class="fa fa-chevron-circle-left icon" style="font-size:50px;"></i>
+					</a>
+				</div>
+				<div class="iconfoward">
+					<a href="#wall-3">
+						<i class="fa fa-chevron-circle-right icon" style="font-size:50px;"></i>
+					</a>
+				</div>
+			</div>
+			<div class="wall wall-3" id="wall-3">
+				<div class="iconback">
+					<a href="#wall-2">
+						<i class="fa fa-chevron-circle-left icon" style="font-size:50px;"></i>
+					</a>
+				</div>
+				<div class="iconfoward">
+					<a href="#wall-1">
+						<i class="fa fa-chevron-circle-right icon" style="font-size:50px;"></i>
+					</a>
+				</div>
+			</div>
 		</div>
 		<div id="ABOUT" class="about">
 			<div class="title">
