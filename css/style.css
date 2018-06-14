@@ -150,6 +150,7 @@ fieldset{
 }
 .footer_txt{	
 	text-align:center;
+	
 }
 .footer_icons{
 	color:white;
@@ -175,8 +176,25 @@ fieldset{
 	background: #125688;
 	color: white;
 }
-
-
-/*MAIN*/
-
+.carrossel_img{
+	width: 100%;
+	height: auto;
+	display: none;
+	position: relative;	
+}
+.carrossel{
+	max-width: 100%;
+	position: relative;
+	text-align: center;
+}
+.carrossel:after{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	content: '';
+	background-color: rgba(0,0,0,0.5);
+}
 
