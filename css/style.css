@@ -104,7 +104,7 @@ legend {
 }
 .contato{
 	width:100%;
-	height: 550px;
+	height: 580px;
 	padding: 5% 2% 2% 2%;
 	background-image: url("../img/bgsb4.jpg");
 	background-repeat: repeat;
@@ -137,7 +137,90 @@ fieldset{
 }
 .portfolio_img{
 	width: 33%;
+	height: auto;
 	border: 1px solid #2d9fe0;
+	opacity: 1
+	display: inline-block;
+	position:relative;
+	float:left;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	border-radius:25px;
+}
+.portfolio_link {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.portfolio_txt1{	
+	text-align:center;
+	position:absolute;
+	margin-left:7.5%;
+	margin-top:6%;
+	background-color: #2d9fe0;
+	border-radius:25px;
+	width:15%;
+	padding: 16px 32px;
+	transition: .5s ease;
+	opacity: 0;
+	color: white;
+	font-size: 16px;
+	box-shadow: 1px 1px 1px 1px grey;
+}
+.portfolio_txt2{	
+	text-align:center;
+	position:absolute;
+	margin-left:41%;
+	margin-top:6%;
+	background-color: #2d9fe0;
+	border-radius:25px;
+	width:15%;
+	padding: 16px 32px;
+	color: white;
+	font-size: 16px;
+	transition: .5s ease;
+	opacity: 0;
+	box-shadow: 1px 1px 1px 1px grey;
+}
+.portfolio_txt3{
+	text-align:center;
+	position:absolute;
+	margin-left:73%;
+	margin-top:6%;
+	background-color: #2d9fe0;
+	border-radius:25px;
+	width:15%;
+	padding: 16px 32px;
+	transition: .5s ease;
+	opacity: 0;
+	color: white;
+	font-size: 16px;
+	box-shadow: 1px 1px 1px 1px grey;
+}
+.portfolio_img1:hover .portfolio_img {
+  opacity: 0.3;
+}
+
+.portfolio_img1:hover .portfolio_txt1 {
+  opacity: 1;
+}
+.portfolio_img2:hover .portfolio_img {
+  opacity: 0.3;
+}
+
+.portfolio_img2:hover .portfolio_txt2 {
+  opacity: 1;
+}
+.portfolio_img3:hover .portfolio_img {
+  opacity: 0.3;
+}
+
+.portfolio_img3:hover .portfolio_txt3 {
+  opacity: 1;
 }
 .footer{
 	width:100%;
