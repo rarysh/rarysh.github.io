@@ -206,7 +206,21 @@ fieldset{
 	color: #2d9fe0;
 }
 .servicos_img{
-	width: 33%;
-	height: 250px;
-	border: 1px solid #2d9fe0;	
+	display: block;
+}
+.servicos_fundo1{	
+	width: 48%;
+	padding: 2% 2% 2% 4%;
+	float:left;
+	text-align:justify;
+	vertical-align:middle;
+}
+.servicos_txt{
+	text-align:center;
+	vertical-align:middle;
+	padding: 2% 2% 2% 4%;
+	font-size: 120%;
+	z-index: 5;
+	position: relative;
+	font-weight:bold;
 }
