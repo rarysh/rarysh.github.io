@@ -306,27 +306,30 @@ fieldset{
 	height: 100%;
 }
 .wall-1{ 
-	background-color: #f00; 
+	background-image: url("../img/bg1.jpg");
+	position:absolute;
 }
 .wall-2{ 
-	background-color: #0f0; 
+	background-image: url("../img/bg2.jpg");
+	position:absolute;
 }
 .wall-3{ 
-	background-color: #00f; 
+	background-image: url("../img/bg3.jpg");
+	position:absolute;
 }
 .wall:target{
 	display: block;
 }
 .icon{
 	font-size:150%;
-    color: #2d9fe0;
-	text-shadow: 1px 1px 1px grey;
+    color: white;
+	text-shadow: 2px 2px 5px grey;
 }
 .iconfoward{
 	top:35%;
 	right:2%;
 	position:relative;
-	float:right;
+	float:right;	
 }
 .iconback{
 	top:50%;
