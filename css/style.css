@@ -17,6 +17,7 @@ html{
 }
 body{
 	margin:0;
+	padding: 0;
 	text-shadow: 1px 1px 1px lightgrey;
 }
 .navbar{
@@ -300,7 +301,11 @@ fieldset{
 .carrossel{
 	width:100%;
 	height:662px;
-}.wall{
+	background-image: url("../img/bg1.jpg");
+	position:relative;
+	z-index=-1;
+}
+.wall{
 	display: none;
 	width: 100%;
 	height: 100%;
