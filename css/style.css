@@ -301,9 +301,8 @@ fieldset{
 .carrossel{
 	width:100%;
 	height:662px;
-	background-image: url("../img/bg1.jpg");
 	position:relative;
-	z-index=-1;
+	z-index=-1;	
 }
 .wall{
 	display: none;
@@ -321,6 +320,12 @@ fieldset{
 .wall-3{ 
 	background-image: url("../img/bg3.jpg");
 	position:absolute;
+}
+.wallfundo{
+	background-image: url("../img/bg1.jpg");
+	position: absolute;
+	display:block;
+	z-index=-1;
 }
 .wall:target{
 	display: block;
