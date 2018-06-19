@@ -6,6 +6,7 @@
 /* ==== HEADER ==== */
 .header{
 	background-color: white;
+	width:100%;
 	height:auto;
 	position: fixed;
 	z-index:7;
@@ -24,7 +25,6 @@ body{
 	justify-content: space-between;
 	width: 100%;
 	margin:auto;
-	padding-right: 2%;	
 }
 .logo{
 	padding-left: 0%;
@@ -344,12 +344,24 @@ fieldset{
 	left:0%;
 	position:relative;
 }
+.logo_link2{
+	padding-left:2%;
+	display:none;
+}
+.logo_link{
+}
 .portifolio_projetos{
 }
 @media screen and (max-width: 1150px){
 	.navbar_menu{
-		font-size:95%;
+		font-size:100%;
 		transition: all 1s;
+	}
+	.logo_link{
+		display:none;
+	}
+	.logo_link2{
+		display:block;
 	}
 	.about{
 		width:100%;
