@@ -16,6 +16,7 @@
 				<div class="logo">
 					<a class="logo_link" href="https://rarysh.github.io/"><img src="img/logo.png" align="left" alt="byron.solutions" width="50%"></a>
 				</div>
+				<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
 				<div>
 					<ul class="navbar_menu">
 							<li class="navbar_menu_item"><a class="navbar_menu_item_link" href="#CONTATO" title="">Contato</a></li>
@@ -26,6 +27,23 @@
 				</div>
 			</nav>
 		</header>
+		<script type="text/javascript">
+			$(".btn-menu").click(function() {
+				$(".navbar_menu").slideToggle();
+			});
+			
+			$(".navbar__menu__item__link").click(function() {
+					$(".navbar_menu").hide();
+			});
+			
+			var img = 1;
+			var srcImg; 
+			setInterval(function() {
+				img = (img % 3) + 1;
+				srcImg = "img/" + img + ".jpg";
+				$(".slider").attr("src", srcImg);
+			}, 3000);
+		</script>
 		<div class="carrossel">
 			<script>
 				window.location = "#wall-1";
@@ -129,7 +147,7 @@
 			<div class="title">
 				<h1>Portfólio</h1>
 			</div>
-			<div>
+			<div class="portfolio_projetos">
 				<a class="navbar__menu__item__link" href="http://fatorjunior.com.br/" title="">
 					<div class="portfolio_img1">
 						<img class="portfolio_img" src="img/screenshot3.png" alt="">
@@ -172,8 +190,8 @@
 		</div>
 		<footer class="footer">
 			<div class="footer_icons">
-				<a href="https://www.facebook.com/byron.solutions/" class="fa fa-facebook"></a>
-				<a href="https://www.instagram.com/byron.solutions/" class="fa fa-instagram"></a>
+				<a href="https://www.facebook.com/byron.solutions/" class="fa fa-facebook" style="font-size:25px;"></a>
+				<a href="https://www.instagram.com/byron.solutions/" class="fa fa-instagram" style="font-size:25px;"></a>
 			</div>
 			<div class="footer_txt">
 				rarysh.costa@gmail.com<br>
