@@ -56,7 +56,7 @@ body{
 .about{
 	width:100%;
 	height:auto;
-	padding: 5% 2% 2% 2%;
+	padding: 5% 2% 5% 2%;
 	background-color: #2d9fe0;
 	background-image: url("../img/bgsb3.jpg");
 	background-repeat: repeat;
@@ -131,7 +131,6 @@ fieldset{
 	margin-left:25%;
 	border-color: #2d9fe0;
 }
-
 .portfolio {
 	width:100%;
 	height: 550px;
@@ -153,15 +152,6 @@ fieldset{
 	transition: .5s ease;
 	backface-visibility: hidden;
 	border-radius:25px;
-}
-.portfolio_link {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
 }
 .portfolio_txt1{	
 	text-align:center;
@@ -350,6 +340,14 @@ fieldset{
 .portifolio_projetos{
 }
 @media screen and (max-width: 1150px){
+	.navbar_menu_item_link{
+		font-size:120%;
+		transition: all 1s;
+	}
+	.navbar_menu{
+		padding:1.5%;
+		transition: all 1s;
+	}
 	.logo_link{
 		display:none;
 	}
@@ -369,31 +367,35 @@ fieldset{
 		width: 96%;
 		transition: all 1s;
 	}
+	.servicos_txt{
+		font-size:140%;
+	}
 	.portfolio_projetos{
 		display:grid;
-		padding-left:15%;
+		padding-left:20%;
 		transition: all 1s;
+		width:80%;
 	}	
 	.portfolio{
 		height:auto;
 		transition: all 1s;
 	}
 	.portfolio_img{
-		width: 80%;
+		width: 100%;
 		transition: all 1s;
 	}
 	.portfolio_txt1{	
-		margin-left:27%;
-		margin-top:13%;		
+		margin-left:22%;
+		margin-top:11%;	
 		transition: all 1s;
 	}
 	.portfolio_txt2{
-		margin-left:27%;
-		margin-top:13%;	
+		margin-left:22%;
+		margin-top:11%;	
 	}	
 	.portfolio_txt3{	
-		margin-left:27%;
-		margin-top:13%;	
+		margin-left:22%;
+		margin-top:11%;	
 		transition: all 1s;
 	}
 }
