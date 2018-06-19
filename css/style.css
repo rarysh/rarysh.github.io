@@ -357,26 +357,24 @@ fieldset{
 	cursor: pointer;
 	transition: all 1s ease;
 	margin-top:0.8%;
-	display:none;	
+	display:none;
 }
 
 .btn-menu:hover {
 	background-color: #2d9fe0;
 	color: white;
 }
-@media screen and (max-width: 1200px){
+@media screen and (min-width: 1050px){
+	/*.navbar_menu_item{
+		display: none;
+		
+	}*/
 	.navbar_menu{
 		font-size:95%;
 		transition: all 1s;
 	}
 }
 @media screen and (max-width: 1050px){
-	.navbar_menu{
-		font-size:95%;
-		transition: all 1s;
-	}
-}
-@media screen and (min-width: 1050px){
 	.about{
 		width:100%;
 		transition: all 1s;
