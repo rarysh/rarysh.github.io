@@ -16,7 +16,6 @@
 				<div class="logo">
 					<a class="logo_link" href="https://rarysh.github.io/"><img src="img/logo.png" align="left" alt="byron.solutions" width="50%"></a>
 				</div>
-				<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
 				<div>
 					<ul class="navbar_menu">
 							<li class="navbar_menu_item"><a class="navbar_menu_item_link" href="#CONTATO" title="">Contato</a></li>
@@ -27,23 +26,6 @@
 				</div>
 			</nav>
 		</header>
-		<script type="text/javascript">
-			$(".btn-menu").click(function() {
-				$(".navbar_menu").slideToggle();
-			});
-			
-			$(".navbar__menu__item__link").click(function() {
-					$(".navbar_menu").hide();
-			});
-			
-			var img = 1;
-			var srcImg; 
-			setInterval(function() {
-				img = (img % 3) + 1;
-				srcImg = "img/" + img + ".jpg";
-				$(".slider").attr("src", srcImg);
-			}, 3000);
-		</script>
 		<div class="carrossel">
 			<script>
 				window.location = "#wall-1";
