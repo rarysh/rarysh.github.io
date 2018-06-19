@@ -35,13 +35,11 @@ body{
     margin: 0;
     padding: 2%;
 	font-size: 120%;
-	
 }
 .navbar_menu_item{
 	float:right;
-	padding-right: 2%;
-	padding-left: 2%;
-    border-left:1px solid #2d9fe0;
+	margin-right: 2%;
+	margin-left: 2%;
 }
 .navbar_menu_item:hover>a{
 	color:#252525;
@@ -348,7 +346,7 @@ fieldset{
 }
 .portifolio_projetos{
 }
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1150px){
 	.navbar_menu{
 		font-size:95%;
 		transition: all 1s;
