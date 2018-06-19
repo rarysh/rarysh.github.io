@@ -5,7 +5,6 @@
 }
 /* ==== HEADER ==== */
 .header{
-	background-color: white;
 	width:100%;
 	height:auto;
 	position: fixed;
@@ -22,7 +21,6 @@ body{
 	text-shadow: 1px 1px 1px lightgrey;
 }
 .navbar{
-	justify-content: space-between;
 	width: 100%;
 	margin:auto;
 }
@@ -44,7 +42,6 @@ body{
 .navbar_menu_item:hover>a{
 	color:#252525;
 	transition: color 1s;
-
 }
 .navbar_menu_item:last-child {
     border-left: none;
@@ -353,10 +350,6 @@ fieldset{
 .portifolio_projetos{
 }
 @media screen and (max-width: 1150px){
-	.navbar_menu{
-		font-size:100%;
-		transition: all 1s;
-	}
 	.logo_link{
 		display:none;
 	}
