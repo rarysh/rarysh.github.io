@@ -1,0 +1,71 @@
+
+#menu-mobile{
+    display:none;
+    i{
+        color: $primary-color;
+        font-size: 2em;
+        border: 4px solid $secondary-color;
+        border-radius: 50%;
+        padding: 0.4em;
+    }
+    h1{
+        font-size:4em;
+    }
+}
+.button-mobile{
+    display:block;
+    text-align:center;
+    a{
+        color: $primary-color;
+    }
+    i{
+        font-size: 2em;
+        border: 3px solid $primary-color;
+        border-radius: 50%;
+        padding: 0.4em;
+        margin-bottom: 1em;
+    }
+    @media only screen and (min-width: $media-768){
+        display:none;
+    }
+}
+.menu-mobilegrid{
+    background-color: rgba( $primary-color, .7 );
+    color: $secondary-color;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "titulo"
+        "tags"
+        "mova"
+        "botao";
+    padding: 5%;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    .tags{
+        display:block;
+        float:bottom;
+        .menu{
+            list-style: none;
+            padding:0;
+            .menuitem{
+                float:none;
+                margin: 2% 0;
+            }
+        }
+    } 
+    .mova{ 
+        display:block!important;
+        text-align:center;
+    } 
+}
+.hidebtn{
+    grid-area:botao;
+    align-self: center;
+}

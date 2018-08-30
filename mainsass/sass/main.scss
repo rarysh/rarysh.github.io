@@ -1,0 +1,24 @@
+$primary-color:#682481;
+$secondary-color:#fff;
+
+
+$postbutton-color: #00FF9E;
+
+$investimento-color: #DFE183;
+$credito-color: #FDB713;
+$intercambio-color: #67A4FF;
+$financiamento-color: #4FB9CE;
+$dividas-color: #FF7F63;
+$cursos-color: #02AE99;
+
+$media-768: 768px; 
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+@import 'partials/reset';
+@import 'partials/header';
+@import 'partials/container';
+@import 'partials/buttons';
+@import 'partials/footer';
+@import 'partials/menumobile';
