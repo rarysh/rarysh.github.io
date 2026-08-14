@@ -1,200 +1,796 @@
-<!DOCTYPE html>
-<html>
-	<head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Prova - Blog</title>
-        <!-- icons-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Latest compiled and minified CSS -->
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rarysh Costa Souza — Senior Backend Engineer</title>
+<meta name="description" content="Senior backend engineer with 8+ years building distributed, event-driven systems and large-scale data processing. Node.js, NestJS, Go, TypeScript, GCP, AWS, Kubernetes.">
+<meta name="theme-color" content="#08090b">
+<link rel="canonical" href="https://rarysh.github.io/">
 
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Rarysh Costa Souza — Senior Backend Engineer">
+<meta property="og:description" content="Senior backend developer, 8+ years building distributed, event-driven systems and large-scale data processing.">
+<meta property="og:url" content="https://rarysh.github.io/">
+<meta property="og:image" content="https://rarysh.github.io/assets/img/og.png?v=3">
+<meta name="twitter:card" content="summary_large_image">
 
-        <link rel="stylesheet"  href="./mainsass/css/main.css">
-        <script src="./javascript/script.js"></script>
-	</head>
-	<body>
-        <header class="header">
-            <div class="logo">
-                <h1>Blog</h1>
-                <p>Lorem Ipsum</p>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2308090b'/><text x='16' y='23' font-family='ui-monospace,monospace' font-size='18' font-weight='600' fill='%237dd3a0' text-anchor='middle'>r</text></svg>">
+<link rel="preload" href="assets/fonts/grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css?v=8">
+<script src="assets/js/main.js?v=8" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="#top"><span class="nav__dot" aria-hidden="true"></span>rarysh</a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#work">Experience</a>
+      <a href="#cases">Impact</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero__grid">
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="nav__dot" aria-hidden="true"></span> Senior Backend Developer</p>
+
+        <h1 class="hero__title" data-split>I build backends that <em>scale under load.</em></h1>
+
+        <p class="hero__lede">
+          Senior backend engineer, 8+ years. Distributed architectures, event-driven systems
+          and large-scale data processing — currently building multi-tenant trading
+          infrastructure at FunderPro.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact" data-magnetic>Get in touch</a>
+          <a class="btn" href="https://www.linkedin.com/in/_rarysh" rel="me noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/rarysh" rel="me noopener">GitHub</a>
+        </div>
+      </div>
+
+      <figure class="pipeline" aria-label="Diagram of an event-driven pipeline: ingest, queue, workers, store and dashboard">
+        <canvas class="pipeline__canvas"></canvas>
+        <figcaption class="pipeline__cap">
+          <span class="pipeline__dot" aria-hidden="true"></span>
+          live event pipeline
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap">
+      <dl class="stats">
+        <div class="stat">
+          <dd><span data-count="8">0</span>+</dd>
+          <dt>Years building production systems</dt>
+        </div>
+        <div class="stat">
+          <dd><span data-count="1000">0</span>s</dd>
+          <dt>Requests per second at peak traffic</dt>
+        </div>
+        <div class="stat">
+          <dd><span data-count="7">0</span></dd>
+          <dt>Companies shipped for, fully remote</dt>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ LOGO WALL ============ -->
+  <section class="wrap logos-section" aria-label="Companies I have worked for">
+    <p class="logos__label">Where I've built</p>
+    <ul class="logos">
+      <li class="logo"><img src="assets/img/logos/funderpro.webp?v=3" alt="FunderPro" width="120" height="32" loading="lazy"></li>
+      <li class="logo logo--lockup">
+        <img src="assets/img/logos/stopchurn.png?v=3" alt="" width="120" height="120" loading="lazy">
+        <span>StopChurn</span>
+      </li>
+      <li class="logo"><img src="assets/img/logos/splitc.svg?v=3" alt="SplitC" width="110" height="32" loading="lazy"></li>
+      <li class="logo"><img src="assets/img/logos/gruposoma.png?v=3" alt="Grupo SOMA" width="148" height="34" loading="lazy"></li>
+      <li class="logo"><img src="assets/img/logos/digitalrepublic.webp?v=3" alt="Digital Republic" width="200" height="56" loading="lazy"></li>
+      <li class="logo"><img class="tall" src="assets/img/logos/trsolucoes.png?v=3" alt="TR Soluções" width="1138" height="672" loading="lazy"></li>
+      <li class="logo"><img src="assets/img/logos/byron.png?v=3" alt="byron.solutions" width="640" height="88" loading="lazy"></li>
+      <li class="logo"><img src="assets/img/logos/cvssistemas.png?v=3" alt="CVS Sistemas" width="90" height="67" loading="lazy"></li>
+    </ul>
+  </section>
+
+  <!-- ============ IMPACT / CASE STUDIES ============ -->
+  <section class="wrap section" id="cases">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">Impact</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="cases">
+
+      <article class="case" data-reveal>
+        <div class="case__body">
+          <p class="case__kicker">SplitC · Tech Lead</p>
+          <h3 class="case__title">Cut a data pipeline from 30 minutes to under 5</h3>
+          <p class="case__desc">
+            A data-intensive platform was processing millions of records per run on MySQL,
+            and the job had grown past half an hour — long enough to block everything
+            downstream of it.
+          </p>
+          <ul class="case__points">
+            <li>Migrated the heavy workloads from MySQL to BigQuery, improving both performance and cost</li>
+            <li>Rebuilt the flow as event-driven work on Pub/Sub with background job processing</li>
+            <li>Led the squad that owned performance and scalability end to end</li>
+          </ul>
+          <ul class="card__tags">
+            <li>Go</li><li>Node.js</li><li>NestJS</li><li>BigQuery</li><li>Pub/Sub</li><li>GCP</li>
+          </ul>
+        </div>
+        <figure class="metric" aria-label="Processing time reduced from over 30 minutes to under 5 minutes">
+          <figcaption class="metric__cap">Pipeline run time</figcaption>
+          <div class="bars">
+            <div class="bar">
+              <span class="bar__label">Before</span>
+              <div class="bar__track"><i class="bar__fill bar__fill--before" style="--w:100%"></i></div>
+              <span class="bar__val">30+ min</span>
             </div>
-            <div class="search"><!-- Search form -->
-                <form class="form-inline active-purple-3 active-purple-4">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Busca" aria-label="Busca">
-                </form>
-                <div class="socials">
-                    <ul class="menu">
-                        <li>
-                            <a href="#">
-                                <i class="menuitem fa fa-facebook-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="menuitem fa fa-linkedin-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">    
-                                <i class="menuitem fa fa-twitter-square"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="bar">
+              <span class="bar__label">After</span>
+              <div class="bar__track"><i class="bar__fill" style="--w:16%"></i></div>
+              <span class="bar__val">&lt; 5 min</span>
             </div>
-            <div class="mova">
-                <p>ir para <b><a href="#">Mova</a></b></p>
+          </div>
+          <p class="metric__note">Millions of records per run</p>
+        </figure>
+      </article>
+
+      <article class="case case--flip" data-reveal>
+        <div class="case__body">
+          <p class="case__kicker">Grupo SOMA · Tech Lead</p>
+          <h3 class="case__title">E-commerce that survives Black Friday</h3>
+          <p class="case__desc">
+            High-traffic retail systems handling thousands of requests per second, where the
+            worst day of the year is also the most expensive one to get wrong.
+          </p>
+          <ul class="case__points">
+            <li>Built the middleware layer connecting internal systems to the VTEX checkout flow</li>
+            <li>Hardened resilience for peak events through deliberate load testing</li>
+            <li>Coordinated a team of engineers and drove the architectural decisions</li>
+          </ul>
+          <ul class="card__tags">
+            <li>Node.js</li><li>NestJS</li><li>GraphQL</li><li>Kafka</li><li>Redis</li><li>GCP</li>
+          </ul>
+        </div>
+        <figure class="metric" aria-label="Thousands of requests per second sustained at peak">
+          <figcaption class="metric__cap">Peak throughput</figcaption>
+          <p class="metric__big">1000s<span>req/s</span></p>
+          <div class="spark" aria-hidden="true">
+            <i style="--h:22%"></i><i style="--h:35%"></i><i style="--h:28%"></i><i style="--h:48%"></i>
+            <i style="--h:41%"></i><i style="--h:66%"></i><i style="--h:58%"></i><i style="--h:82%"></i>
+            <i style="--h:74%"></i><i style="--h:96%"></i><i style="--h:88%"></i><i style="--h:70%"></i>
+          </div>
+          <p class="metric__note">Sustained through Black Friday peak</p>
+        </figure>
+      </article>
+
+      <article class="case" data-reveal>
+        <div class="case__body">
+          <p class="case__kicker">FunderPro · Senior Backend Engineer</p>
+          <h3 class="case__title">Multi-tenant trading platform</h3>
+          <p class="case__desc">
+            Backend services for a proprietary trading platform serving multiple client
+            environments from one codebase, where each tenant needs its own behaviour
+            without forking the product.
+          </p>
+          <ul class="case__points">
+            <li>Implemented a feature flag architecture enabling per-client customisation at scale</li>
+            <li>Designed backend workflows for high-availability systems</li>
+            <li>Raised reliability with automated unit and E2E testing plus better background job processing</li>
+          </ul>
+          <ul class="card__tags">
+            <li>Node.js</li><li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>RabbitMQ</li>
+          </ul>
+        </div>
+        <figure class="metric" aria-label="One codebase serving many tenants via feature flags">
+          <figcaption class="metric__cap">Multi-tenant architecture</figcaption>
+          <div class="tenants">
+            <span class="tenants__core">core</span>
+            <div class="tenants__fan">
+              <i>tenant A</i><i>tenant B</i><i>tenant C</i><i>tenant D</i>
             </div>
-            <div class="tags">
-                <ul class="menu" id="menu">
-                    <li> 
-                        <a href="#investimento">
-                            <button class="menuitem btn investimento">#Investimentos</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#credito">
-                            <button class="menuitem btn credito">#Crédito</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#intercambio">
-                            <button class="menuitem btn intercambio">#Intercâmbio</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#financiamento">
-                            <button class="menuitem btn financiamento">#Financiamentos</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#dividas">
-                            <button class="menuitem btn dividas">#Dívidas</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#cursos">
-                            <button class="menuitem btn cursos">#Cursos</button>
-                        </a>
-                    </li>
-                </ul>
+          </div>
+          <p class="metric__note">One codebase, per-client behaviour via flags</p>
+        </figure>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="wrap section" id="portfolio">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+    <p class="section__lede">
+      A selection, not a full list — live commerce and high-traffic fashion e-commerce, the
+      race-control system behind Stock Car, a mentoring marketplace, and the trading and
+      retention platforms I work on today. Plenty of the rest is internal or under NDA and
+      cannot be shown here.
+    </p>
+
+    <div class="folio">
+      <article class="folio__item" data-reveal>
+        <button class="folio__open" type="button" aria-haspopup="dialog">
+          <span class="folio__media">
+            <img src="assets/img/work/soma-live-1.webp?v=3" alt="SOMA Live streaming interface mockup" loading="lazy" decoding="async">
+            <span class="folio__count">5 images</span>
+          </span>
+          <span class="folio__body">
+            <span class="folio__meta">Digital Republic · Full-stack</span>
+            <span class="folio__title">SOMA Live</span>
+            <span class="folio__desc">Live commerce platform that made Grupo SOMA a pioneer of live shopping in Brazil — streaming, chat and checkout in one flow.</span>
+            <span class="folio__cta">View project</span>
+          </span>
+        </button>
+        <ul class="card__tags"><li>Live commerce</li><li>Full-stack</li><li>Retail</li></ul>
+        <div class="folio__full" hidden>
+            <p>New scenarios create new needs. The 2020 pandemic changed how people interact with brands, and live commerce — the old TV shopping channel reimagined for the web — became how fashion retail reached customers who could no longer walk into a store.</p>
+            <p>Grupo SOMA became a pioneer of the format in Brazil. The platform brings streaming, live chat and checkout into a single flow, so a viewer can watch a presenter show a piece and buy it without leaving the broadcast.</p>
+            <p>I worked on it as part of the full-stack team Digital Republic embedded with the client.</p>
+            <div class="folio__shots">
+              <img src="assets/img/work/soma-live-1.webp?v=3" alt="SOMA Live streaming interface mockup" loading="lazy" decoding="async">
+              <img src="assets/img/work/soma-live-2.webp?v=3" alt="SOMA Live product selection screen" loading="lazy" decoding="async">
+              <img src="assets/img/work/soma-live-3.webp?v=3" alt="SOMA Live broadcast view" loading="lazy" decoding="async">
+              <img src="assets/img/work/soma-live-5.webp?v=3" alt="SOMA Live running on a phone" loading="lazy" decoding="async">
+              <img src="assets/img/work/soma-live-4.webp?v=3" alt="SOMA Live mobile checkout" loading="lazy" decoding="async">
             </div>
-        </header>
-        <div class="container mt--6">
-            <div id="1" class="post1 shadow">
-                <div class="postcontent">
-                    <p id="investimento" class="tag">#Investimentos</p>
-                    <h2>Como funciona o investimento P2P (Peer-to-Peer)?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper, neque at tristique iaculis, dui elit porttitor dolor Cras nec ligula est. Morbi commodo et ipsum vitae fringilla.</p>
-                    <button class="btn posts">Ler mais</button>
-                </div>
-                <img src="https://picsum.photos/200/300/?image=538"></img>
+            <a class="folio__src" href="https://www.digitalrepublic.com.br/cases/soma-live/" rel="noopener" target="_blank">Original case study &#8599;</a>
+        </div>
+      </article>
+      <article class="folio__item" data-reveal>
+        <button class="folio__open" type="button" aria-haspopup="dialog">
+          <span class="folio__media">
+            <img src="assets/img/work/lojix-1.webp?v=3" alt="Lojix interactive store website" loading="lazy" decoding="async">
+            <span class="folio__count">2 images</span>
+          </span>
+          <span class="folio__body">
+            <span class="folio__meta">Grupo SOMA · Digital Republic · Full-stack</span>
+            <span class="folio__title">Lojix</span>
+            <span class="folio__desc">Farm's first 100% interactive digital store — a livestream shop where the brand's own team presents and sells in real time.</span>
+            <span class="folio__cta">View project</span>
+          </span>
+        </button>
+        <ul class="card__tags"><li>Livestream</li><li>E-commerce</li><li>Farm</li></ul>
+        <div class="folio__full" hidden>
+            <p>Lojix is Farm's first fully interactive, fully digital store. It was built for customers who want the convenience of e-commerce but not the coldness of it — the format keeps the human part of walking into a Farm store.</p>
+            <p>Instead of conventional salespeople, the brand's own team presents the pieces: stylists, print designers, fashion production and communication staff show the collection live, answer questions in chat, and offer pieces with on-the-spot discounts.</p>
+            <p>It sits inside Grupo SOMA's wider live commerce push, and was one of the earliest examples of the format working at scale in Brazilian fashion retail.</p>
+            <div class="folio__shots">
+              <img src="assets/img/work/lojix-1.webp?v=3" alt="Lojix interactive store website" loading="lazy" decoding="async">
+              <img src="assets/img/work/lojix-2.webp?v=3" alt="Lojix livestream shopping view" loading="lazy" decoding="async">
             </div>
-            <div id="2" class="post2 shadow">
-                <div class="postcontent">
-                    <p id="financiamento" class="tag">#Financiamento</p>
-                    <h2>Vantagens de solicitar um Financiamento</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper, neque at tristique.</p>
-                    <button class="btn posts">Ler mais</button>
-                </div>
-                <img src="https://picsum.photos/200/300/?image=564"></img>
-            </div>
-            <div id="3" class="post3 shadow">
-                <div class="postcontent">
-                    <p id="credito" class="tag">#Crédito</p>
-                    <h2>Vantagens de solicitar um Financiamento</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper, neque at tristique iaculis, dui elit porttitor dolor.</p>
-                    <button class="btn posts">Ler mais</button>
-                </div>
-                <img src="https://picsum.photos/200/300/?image=570"></img>
-            </div>
-            <div id="4" class="post4 shadow">
-                <div class="postcontent">
-                    <p id="dividas" class="tag">#Dívidas</p>
-                    <h2>Posso financiar minhas dívidas?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper, neque at tristique iaculis, dui elit porttitor dolor Cras nec ligula est. Morbi commodo et ipsum vitae fringilla.</p>
-                    <button class="btn posts">Ler mais</button>
-                </div>
-                <img src="https://picsum.photos/200/300/?image=571"></img>
-            </div>
-            <div id="5" class="post5 shadow">
-                <div class="postcontent">
-                    <p id="investimento" class="tag">#Investimentos</p>
-                    <h2>Vantagens de solicitar um Financiamento</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper, neque at tristique iaculis, dui elit porttitor dolor Cras nec ligula est. Morbi commodo et ipsum vitae fringilla.</p>
-                    <button class="btn posts">Ler mais</button>
-                </div>
-                <img src="https://picsum.photos/200/300/?image=572"></img>
-            </div>
-            <div id="6" class="post6 shadow">
-                <div class="postcontent">
-                    <p id="investimento" class="tag">#Investimentos</p>
-                    <h2>Vantagens de solicitar um Financiamento</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper, neque at tristique iaculis, dui elit porttitor dolor Cras nec ligula est. Morbi commodo et ipsum vitae fringilla.</p>
-                    <button class="btn posts">Ler mais</button>
-                </div>
-                <img src="https://picsum.photos/200/300/?image=573"></img>
+            <a class="folio__src" href="https://lojix.farmrio.com.br/" rel="noopener" target="_blank">Original case study &#8599;</a>
+        </div>
+      </article>
+      <article class="folio__item" data-reveal>
+        <button class="folio__open" type="button" aria-haspopup="dialog">
+          <span class="folio__media">
+            <img src="assets/img/work/farmnuvem-1.jpg?v=3" alt="Farm na Nuvem landing page" loading="lazy" decoding="async">
+            <span class="folio__count">4 images</span>
+            
+          </span>
+          <span class="folio__body">
+            <span class="folio__meta">Grupo SOMA · Digital Republic</span>
+            <span class="folio__title">Farm na Nuvem</span>
+            <span class="folio__desc">Farm's first carbon-neutral store — a shoppable 360° walkthrough of the real shop, where every piece on the rack is clickable.</span>
+            <span class="folio__cta">View project</span>
+          </span>
+        </button>
+        <ul class="card__tags"><li>360° commerce</li><li>Catalogue</li><li>Checkout</li></ul>
+        <div class="folio__full" hidden>
+            <p>Farm na Nuvem was Farm's first carbon-neutral store, and it had no floor: a photographic 360° tour of the real shop that you navigate the way you would walk it, from the planted facade on the street to the racks inside.</p>
+            <p>The point was that it is not a showroom. Every piece in the tour is a hotspot — open the gallery, filter by category, land on a product with real pricing, discounts, instalments, size availability and live stock status, then add it to your bag without ever leaving the panorama.</p>
+            <p>That means the 360 layer sits on top of a working commerce backend: catalogue, stock and checkout all have to answer in real time, or the illusion of walking through a store collapses into a broken picture.</p>
+            <div class="folio__shots">
+              <img src="assets/img/work/farmnuvem-1.jpg?v=3" alt="Farm na Nuvem landing page" loading="lazy" decoding="async">
+              <img src="assets/img/work/farmnuvem-2.jpg?v=3" alt="360 degree view inside the store, racks and displays navigable" loading="lazy" decoding="async">
+              <img src="assets/img/work/farmnuvem-3.jpg?v=3" alt="Product gallery opened over the panorama, filtered by category" loading="lazy" decoding="async">
+              <img src="assets/img/work/farmnuvem-4.jpg?v=3" alt="Product detail with price, instalments, sizes and add to bag" loading="lazy" decoding="async">
             </div>
         </div>
-        <footer>
-            <h2>Conheça nossa plataforma, gratuitamente</h2>
-            <button class="btn investiment">Investimentos</button>
-            <button class="btn finance">Financiamentos</button>
-        </footer>
-        <div class="button-mobile">
-            <a href="javascript:void(0);" class="icon" onclick="showmenu()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <div id="menu-mobile">
-            <div class="menu-mobilegrid">
-                <div class="titulo">
-                    <h1>Categoria</h1>
-                </div>
-                <div class="tags">
-                    <ul class="menu" id="menu">
-                        <li> 
-                            <a href="#investimento" onclick="hidemenu()">
-                                <button class="menuitem btn investimento">#Investimentos</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#credito" onclick="hidemenu()">
-                                <button class="menuitem btn credito">#Crédito</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#intercambio" onclick="hidemenu()">
-                                <button class="menuitem btn intercambio">#Intercâmbio</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#financiamento" onclick="hidemenu()">
-                                <button class="menuitem btn financiamento">#Financiamentos</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#dividas" onclick="hidemenu()">
-                                <button class="menuitem btn dividas">#Dívidas</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#cursos" onclick="hidemenu()">
-                                <button class="menuitem btn cursos">#Cursos</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mova">
-                    <p>ir para <b><a href="#" onclick="hidemenu()">Mova</a></b></p>
-                </div>
-                <div class="hidebtn">
-                    <a href="javascript:void(0);" class="icon" onclick="hidemenu()">
-                        <i class="fa fa-circle"></i>
-                    </a>
-                </div>
+      </article>
+      <article class="folio__item" data-reveal>
+        <button class="folio__open" type="button" aria-haspopup="dialog">
+          <span class="folio__media">
+            <img src="assets/img/work/soma-squads-1.webp?v=3" alt="Grupo SOMA web application mockup" loading="lazy" decoding="async">
+            <span class="folio__count">4 images</span>
+          </span>
+          <span class="folio__body">
+            <span class="folio__meta">Digital Republic · Full-stack</span>
+            <span class="folio__title">SOMA Squads Web</span>
+            <span class="folio__desc">Web and e-commerce applications for Grupo SOMA's fashion brands, including Farm and Animale.</span>
+            <span class="folio__cta">View project</span>
+          </span>
+        </button>
+        <ul class="card__tags"><li>E-commerce</li><li>Performance</li><li>VTEX</li></ul>
+        <div class="folio__full" hidden>
+            <p>Grupo SOMA is a Brazilian luxury fashion group formed in 2010 from the merger of Farm and Animale, and it now holds many of the country's leading fashion brands. That portfolio runs on a lot of web surface area.</p>
+            <p>I was embedded in the client's web squad rather than working at arm's length — engineers were picked for technical depth and fit with the existing team. The work centred on evolving the group's web and e-commerce applications and making them measurably faster.</p>
+            <p>Beyond shipping features, much of the value was raising the digital maturity of the in-house team, so the improvements outlived the engagement.</p>
+            <div class="folio__shots">
+              <img src="assets/img/work/soma-squads-1.webp?v=3" alt="Grupo SOMA web application mockup" loading="lazy" decoding="async">
+              <img src="assets/img/work/soma-squads-2.webp?v=3" alt="SOMA e-commerce interface" loading="lazy" decoding="async">
+              <img src="assets/img/work/soma-squads-3.webp?v=3" alt="SOMA storefront on desktop" loading="lazy" decoding="async">
+              <img src="assets/img/work/soma-squads-4.webp?v=3" alt="Farm e-commerce storefront on a laptop" loading="lazy" decoding="async">
             </div>
+            <a class="folio__src" href="https://www.digitalrepublic.com.br/cases/soma-squads-web/" rel="noopener" target="_blank">Original case study &#8599;</a>
         </div>
-	</body>
+      </article>
+      <article class="folio__item" data-reveal>
+        <button class="folio__open" type="button" aria-haspopup="dialog">
+          <span class="folio__media">
+            <img src="assets/img/work/formula1-1.webp?v=3" alt="Race Control System grand prix dashboard" loading="lazy" decoding="async">
+            <span class="folio__count">4 images</span>
+          </span>
+          <span class="folio__body">
+            <span class="folio__meta">Digital Republic · Software · Rollout</span>
+            <span class="folio__title">Race Control System — Stock Car</span>
+            <span class="folio__desc">The system race control runs on during Stock Car — catching every incident, flag and alert while the cars are still on track.</span>
+            <span class="folio__cta">View project</span>
+          </span>
+        </button>
+        <ul class="card__tags"><li>Real-time</li><li>Stock Car</li><li>Race control</li><li>Live ops</li></ul>
+        <div class="folio__full" hidden>
+            <p>Stock Car Pro Series is the biggest motorsport championship in Brazil, and a race there is decided in fractions of a second. Watch one and the obvious thing is speed. The non-obvious problem sits in race control: a full grid, all of it happening at once, and every incident has to be seen, judged and recorded <em>while it is still happening</em>.</p>
+            <p>Get that wrong and the sport gets it wrong — a missed flag or a late call changes the result of a race that thousands of people are watching live.</p>
+            <p>The Race Control System is what makes that practical: reporting occurrences straight from race control, checking alerts, and surfacing incident data fast enough to act on rather than review afterwards. Decisions land on evidence that arrived in time.</p>
+            <p>Digital Republic's scope covered the software itself, evaluation, and supporting the rollout and live race-day operation.</p>
+            <div class="folio__shots">
+              <img src="assets/img/work/formula1-1.webp?v=3" alt="Race Control System grand prix dashboard" loading="lazy" decoding="async">
+              <img src="assets/img/work/formula1-2.webp?v=3" alt="Race control occurrences list" loading="lazy" decoding="async">
+              <img src="assets/img/work/formula1-3.webp?v=3" alt="Race Control System practice session view" loading="lazy" decoding="async">
+              <img src="assets/img/work/formula1-4.webp?v=3" alt="Race Control System race view" loading="lazy" decoding="async">
+            </div>
+            <a class="folio__src" href="https://www.digitalrepublic.com.br/cases/formula/" rel="noopener" target="_blank">Original case study &#8599;</a>
+        </div>
+      </article>
+      <article class="folio__item" data-reveal>
+        <button class="folio__open" type="button" aria-haspopup="dialog">
+          <span class="folio__media">
+            <img src="assets/img/work/bluementor-1.webp?v=3" alt="Bluementor platform on a laptop" loading="lazy" decoding="async">
+            <span class="folio__count">4 images</span>
+          </span>
+          <span class="folio__body">
+            <span class="folio__meta">Digital Republic · Full-stack</span>
+            <span class="folio__title">Bluementor</span>
+            <span class="folio__desc">An online mentoring platform for finding, booking and running 1:1 sessions with mentors anywhere in the world.</span>
+            <span class="folio__cta">View project</span>
+          </span>
+        </button>
+        <ul class="card__tags"><li>Marketplace</li><li>Scheduling</li><li>Full-stack</li></ul>
+        <div class="folio__full" hidden>
+            <p>Finding the right person to talk to is the bottleneck in most careers — the mentor who unlocks an insight, or pressure-tests a business idea, is rarely someone you already know.</p>
+            <p>Bluementor removes the geography from that problem: find, schedule and talk to mentors entirely online, wherever you are. The product centres on 1:1 meetings with specialists.</p>
+            <p>The company's ambition was to become the largest career and business mentoring platform in the Nordic region. Digital Republic delivered it end to end.</p>
+            <div class="folio__shots">
+              <img src="assets/img/work/bluementor-1.webp?v=3" alt="Bluementor platform on a laptop" loading="lazy" decoding="async">
+              <img src="assets/img/work/bluementor-2.webp?v=3" alt="Bluementor website" loading="lazy" decoding="async">
+              <img src="assets/img/work/bluementor-3.webp?v=3" alt="Booked mentoring sessions screen" loading="lazy" decoding="async">
+              <img src="assets/img/work/bluementor-4.webp?v=3" alt="Mentor discovery screen" loading="lazy" decoding="async">
+            </div>
+            <a class="folio__src" href="https://www.digitalrepublic.com.br/cases/bluementor/" rel="noopener" target="_blank">Original case study &#8599;</a>
+        </div>
+      </article>
+      <article class="folio__item" data-reveal>
+        <button class="folio__open" type="button" aria-haspopup="dialog">
+          <span class="folio__media">
+            <img src="assets/img/work/funderpro-1.jpg?v=3" alt="FunderPro trading platform homepage" loading="lazy" decoding="async">
+            <span class="folio__count">2 images</span>
+          </span>
+          <span class="folio__body">
+            <span class="folio__meta">FunderPro · Senior Backend Engineer</span>
+            <span class="folio__title">FunderPro trading platform</span>
+            <span class="folio__desc">Multi-tenant proprietary trading platform — traders pass a challenge, trade the firm's capital and keep up to 90% of the upside.</span>
+            <span class="folio__cta">View project</span>
+          </span>
+        </button>
+        <ul class="card__tags"><li>NestJS</li><li>PostgreSQL</li><li>RabbitMQ</li><li>Redis</li></ul>
+        <div class="folio__full" hidden>
+            <p>FunderPro is a prop trading firm: traders prove themselves on a challenge account, get funded, and trade the firm's capital with rewards paid out in hours rather than weeks. Everything behind that — accounts, rules, payouts — is backend work where being wrong costs real money.</p>
+            <p>I build the backend services for the platform, which serves multiple client environments from a single codebase. The feature flag architecture I implemented is what makes that possible: each tenant gets its own behaviour without forking the product.</p>
+            <p>Alongside that, I design backend workflows for high-availability systems, build the third-party integrations the platform depends on, and refactor existing code as new features land on top of it.</p>
+            <p>A lot of the work is unglamorous and matters most: better logging and observability, so production behaviour is diagnosable instead of guessed at, and automated unit and E2E coverage so releases are trustworthy. I lean on AI tooling to move faster through it without letting quality slip.</p>
+            <div class="folio__shots">
+              <img src="assets/img/work/funderpro-1.jpg?v=3" alt="FunderPro trading platform homepage" loading="lazy" decoding="async">
+              <img src="assets/img/work/funderpro-2.jpg?v=3" alt="FunderPro how it works page" loading="lazy" decoding="async">
+            </div>
+            <a class="folio__src" href="https://funderpro.com/" rel="noopener" target="_blank">Original case study &#8599;</a>
+        </div>
+      </article>
+      <article class="folio__item" data-reveal>
+        <button class="folio__open" type="button" aria-haspopup="dialog">
+          <span class="folio__media">
+            <img src="assets/img/work/stopchurn-1.jpg?v=3" alt="StopChurn analytics dashboard" loading="lazy" decoding="async">
+            <span class="folio__count">3 images</span>
+          </span>
+          <span class="folio__body">
+            <span class="folio__meta">StopChurn · Senior Fullstack Engineer</span>
+            <span class="folio__title">StopChurn</span>
+            <span class="folio__desc">Post-sale retention platform that turns an existing customer database into automated, personal re-engagement.</span>
+            <span class="folio__cta">View project</span>
+          </span>
+        </button>
+        <ul class="card__tags"><li>NestJS</li><li>React</li><li>Kafka</li><li>MongoDB</li></ul>
+        <div class="folio__full" hidden>
+            <p>StopChurn builds post-sale experiences that feel personal but run automatically, turning a company's existing customer database into a retention engine instead of a dormant list.</p>
+            <p>I joined a legacy system with critical reliability issues and very little documentation, and the first job was making it stable enough to build on. From there I delivered features across both backend and frontend while fixing production issues in flight.</p>
+            <p>The lasting change was introducing automated testing — unit and E2E — which cut regressions and made deploys something the team could trust. It was a low-structure environment that ran on high individual ownership.</p>
+            <div class="folio__shots">
+              <img src="assets/img/work/stopchurn-1.jpg?v=3" alt="StopChurn analytics dashboard showing deliveries, earnings and journey performance" loading="lazy" decoding="async">
+              <img src="assets/img/work/stopchurn-2.jpg?v=3" alt="Customer journey builder with conversion events and attribution tracking" loading="lazy" decoding="async">
+              <img src="assets/img/work/stopchurn-3.jpg?v=3" alt="Email template library inside StopChurn" loading="lazy" decoding="async">
+            </div>
+            <a class="folio__src" href="https://stopchurn.com/" rel="noopener" target="_blank">Original case study &#8599;</a>
+        </div>
+      </article>
+      <article class="folio__item" data-reveal>
+        <button class="folio__open" type="button" aria-haspopup="dialog">
+          <span class="folio__media">
+            <img src="assets/img/work/splitc.jpg?v=3" alt="SplitC node-based calculation flow editor" loading="lazy" decoding="async">
+            <span class="folio__count">2 images</span>
+          </span>
+          <span class="folio__body">
+            <span class="folio__meta">SplitC · Tech Lead</span>
+            <span class="folio__title">Calculation engine</span>
+            <span class="folio__desc">An engine that automates any variable-compensation model, replacing error-prone manual work with auditable output.</span>
+            <span class="folio__cta">View project</span>
+          </span>
+        </button>
+        <ul class="card__tags"><li>BigQuery</li><li>Pub/Sub</li><li>Go</li><li>Integrations</li></ul>
+        <div class="folio__full" hidden>
+            <p>Variable compensation is one of those processes that stays on spreadsheets far longer than it should. The rules get intricate, the structures get sophisticated, and every month someone recalculates by hand and hopes they got it right.</p>
+            <p>SplitC models any calculation as a visual flow: data sources feed calculation nodes, which feed payouts and dashboards. It pulls from any system with an API, a database, or even a spreadsheet export, and integrates with the major CRM and ERP platforms.</p>
+            <p>The platform also collects, validates and approves invoices in place, running compliance checks automatically — matching invoice values against payments, verifying tax IDs, flagging what fails before it becomes a problem.</p>
+            <p>I led the squad responsible for performance and scalability, including the BigQuery migration and the event-driven rework that cut the main pipeline from over 30 minutes to under 5.</p>
+            <div class="folio__shots">
+              <img src="assets/img/work/splitc.jpg?v=3" alt="SplitC node-based calculation flow editor" loading="lazy" decoding="async">
+              <img src="assets/img/work/splitc-2.jpg?v=3" alt="Invoice validation screen with automated compliance checks" loading="lazy" decoding="async">
+            </div>
+            <a class="folio__src" href="https://www.splitc.com.br/casos-de-uso/qualquer-calculo" rel="noopener" target="_blank">Original case study &#8599;</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="wrap section" id="work">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Experience</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="roles">
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">Dec 2025 — Present</p>
+          <span class="role__badge">Current</span>
+        </div>
+        <div>
+          <h3 class="role__title">Senior Backend Engineer</h3>
+          <p class="role__org">FunderPro · Remote, International</p>
+          <ul class="role__points">
+            <li>Developed backend services for a <strong>multi-tenant trading platform</strong> supporting multiple client environments.</li>
+            <li>Implemented <strong>feature flag architecture</strong> enabling scalable client customisation.</li>
+            <li>Built <strong>multiple third-party integrations</strong> across the platform.</li>
+            <li>Refactored existing code and shipped new features on top of it.</li>
+            <li>Improved <strong>logging and observability</strong>, making production behaviour diagnosable.</li>
+            <li>Improved system reliability through automated testing (unit + E2E) and better background job processing.</li>
+            <li>Designed backend workflows for high-availability systems.</li>
+            <li>Used <strong>AI tooling to increase delivery speed</strong> without trading away code quality.</li>
+          </ul>
+          <ul class="role__stack">
+            <li>Node.js</li><li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>RabbitMQ</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">Jul 2025 — Nov 2025</p>
+        </div>
+        <div>
+          <h3 class="role__title">Senior Fullstack Engineer</h3>
+          <p class="role__org">StopChurn · Remote, International</p>
+          <ul class="role__points">
+            <li><strong>Stabilised a legacy system</strong> with critical reliability issues and limited documentation.</li>
+            <li>Delivered new features across backend and frontend while fixing production issues.</li>
+            <li>Introduced automated testing (unit + E2E), reducing regressions and improving deployment confidence.</li>
+            <li>Operated effectively in a low-structure environment with high ownership.</li>
+          </ul>
+          <ul class="role__stack">
+            <li>Node.js</li><li>NestJS</li><li>React</li><li>TypeScript</li><li>MySQL</li><li>MongoDB</li><li>AWS</li><li>Kafka</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">Sep 2022 — Jul 2025</p>
+          <span class="role__badge">Tech Lead</span>
+        </div>
+        <div>
+          <h3 class="role__title">Tech Lead / Senior Backend Engineer</h3>
+          <p class="role__org">SplitC · Remote</p>
+          <ul class="role__points">
+            <li>Led a squad focused on <strong>performance and scalability</strong> of a data-intensive platform.</li>
+            <li>Designed solutions for large-scale data processing handling <strong>millions of records</strong>.</li>
+            <li>Reduced processing time from <strong>30+ minutes to under 5 minutes</strong>.</li>
+            <li>Migrated workloads from MySQL to BigQuery, improving performance and cost efficiency.</li>
+            <li>Built event-driven systems using Pub/Sub and background job processing.</li>
+            <li>Contributed to hiring and technical evaluations.</li>
+          </ul>
+          <ul class="role__stack">
+            <li>Node.js</li><li>NestJS</li><li>Go</li><li>TypeScript</li><li>BigQuery</li><li>GCP</li><li>Pub/Sub</li><li>AWS</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">Sep 2021 — Sep 2022</p>
+          <span class="role__badge">Tech Lead</span>
+        </div>
+        <div>
+          <h3 class="role__title">Tech Lead / Senior Backend Engineer</h3>
+          <p class="role__org">Grupo SOMA · Remote</p>
+          <ul class="role__points">
+            <li>Led development of <strong>high-traffic e-commerce systems</strong> handling thousands of requests per second.</li>
+            <li>Built middleware layer connecting systems to the VTEX checkout flow.</li>
+            <li>Improved system resilience for peak events such as Black Friday through load testing.</li>
+            <li>Coordinated a team of engineers and contributed to architectural decisions.</li>
+          </ul>
+          <ul class="role__stack">
+            <li>Node.js</li><li>NestJS</li><li>TypeScript</li><li>GraphQL</li><li>Redis</li><li>Kafka</li><li>GCP</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">Oct 2020 — Aug 2021</p>
+        </div>
+        <div>
+          <h3 class="role__title">Software Engineer</h3>
+          <p class="role__org">Digital Republic · Remote</p>
+          <ul class="role__points">
+            <li>Worked across multiple full-stack projects in different domains.</li>
+            <li>Built integrations with third-party APIs and backend systems.</li>
+            <li>Developed features for marketplace and CMS platforms.</li>
+          </ul>
+          <ul class="role__stack">
+            <li>Node.js</li><li>React</li><li>TypeScript</li><li>MongoDB</li><li>PostgreSQL</li><li>AWS</li><li>GCP</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">Mar 2019 — Apr 2020</p>
+        </div>
+        <div>
+          <h3 class="role__title">IT Analyst</h3>
+          <p class="role__org">TR Soluções</p>
+          <ul class="role__points">
+            <li>Contributed to migration from <strong>monolith to microservices</strong> using Quarkus.</li>
+            <li>Implemented infrastructure with Docker and Kubernetes.</li>
+            <li>Improved code quality and observability using Prometheus and Grafana.</li>
+          </ul>
+          <ul class="role__stack">
+            <li>Java</li><li>Quarkus</li><li>Docker</li><li>Kubernetes</li><li>MySQL</li><li>PostgreSQL</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">2018 — 2019</p>
+        </div>
+        <div>
+          <h3 class="role__title">Developer</h3>
+          <p class="role__org">byron.solutions</p>
+          <ul class="role__points">
+            <li>Worked on web applications across domains including logistics and small business systems.</li>
+            <li>Built frontend interfaces and backend features for client projects.</li>
+          </ul>
+          <ul class="role__stack">
+            <li>JavaScript</li><li>PHP</li><li>SQL</li><li>Bootstrap</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">Sep 2018 — Feb 2019</p>
+          <span class="role__badge">Internship</span>
+        </div>
+        <div>
+          <h3 class="role__title">Developer Intern</h3>
+          <p class="role__org">CVS Sistemas e Informática · Itajubá, MG</p>
+          <p class="role__blurb">
+            Worked on multiple client projects across different domains, contributing as a
+            full-stack developer.
+          </p>
+          <ul class="role__points">
+            <li>Built features for a <strong>logistics platform</strong> used by delivery drivers.</li>
+            <li>Developed parts of mobile and web apps for restaurants and beauty salons.</li>
+            <li>Contributed to an <strong>online course platform</strong>, implementing new features and improving existing ones.</li>
+          </ul>
+          <ul class="role__stack">
+            <li>PHP</li><li>JavaScript</li><li>SQL</li><li>Bootstrap</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Node.js</span><span>TypeScript</span><span>NestJS</span><span>Go</span>
+      <span>Kafka</span><span>RabbitMQ</span><span>Pub/Sub</span><span>BigQuery</span>
+      <span>PostgreSQL</span><span>Kubernetes</span><span>GCP</span><span>AWS</span>
+      <span>Node.js</span><span>TypeScript</span><span>NestJS</span><span>Go</span>
+      <span>Kafka</span><span>RabbitMQ</span><span>Pub/Sub</span><span>BigQuery</span>
+      <span>PostgreSQL</span><span>Kubernetes</span><span>GCP</span><span>AWS</span>
+    </div>
+  </div>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="wrap section" id="skills">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Toolkit</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="skills" data-reveal>
+      <div>
+        <h3>Languages</h3>
+        <ul>
+          <li>Node.js <span class="yrs">6+ yrs</span></li>
+          <li>TypeScript <span class="yrs">5+ yrs</span></li>
+          <li>Go <span class="yrs">2+ yrs</span></li>
+          <li>Java <span class="yrs">1+ yr</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Frameworks</h3>
+        <ul><li>NestJS</li><li>Express</li><li>React</li></ul>
+      </div>
+      <div>
+        <h3>Cloud &amp; Infra</h3>
+        <ul><li>AWS</li><li>GCP</li><li>Docker</li><li>Kubernetes</li></ul>
+      </div>
+      <div>
+        <h3>Databases</h3>
+        <ul><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>BigQuery</li></ul>
+      </div>
+      <div>
+        <h3>Messaging</h3>
+        <ul><li>Kafka</li><li>RabbitMQ</li><li>Pub/Sub</li></ul>
+      </div>
+      <div>
+        <h3>Testing</h3>
+        <ul><li>Jest</li><li>Cypress</li><li>TDD</li></ul>
+      </div>
+    </div>
+
+    <div class="extras" data-reveal>
+      <div class="extra">
+        <h3>Education</h3>
+        <p><strong>Information Systems</strong><br>Universidade Federal de Itajubá (Unifei)</p>
+      </div>
+      <div class="extra">
+        <h3>Languages</h3>
+        <p><strong>English</strong> — Full professional proficiency (EF SET C2)<br>
+           <strong>Portuguese</strong> — Native</p>
+      </div>
+      <div class="extra">
+        <h3>Certifications</h3>
+        <ul class="certs">
+          <li>Scrum Fundamentals Certified</li>
+          <li>Scrum Foundation Professional</li>
+          <li>DevOps Essentials Professional</li>
+          <li>Remote Work &amp; Virtual Collaboration</li>
+          <li>EF SET English — C2 Proficient</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="wrap section" id="contact">
+    <div class="contact" data-reveal>
+      <h2>Let's talk.</h2>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="https://www.linkedin.com/in/_rarysh" rel="me noopener" data-magnetic>Message me on LinkedIn</a>
+        <a class="btn" href="https://github.com/rarysh" rel="me noopener">GitHub</a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span>© 2026 Rarysh Costa Souza · Itajubá, MG, Brazil</span>
+      <span>Hand-written HTML &amp; CSS. No framework.</span>
+    </footer>
+  </section>
+
+</main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rarysh Costa Souza",
+  "url": "https://rarysh.github.io/",
+  "jobTitle": "Senior Backend Engineer",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Itajubá",
+    "addressRegion": "MG",
+    "addressCountry": "BR"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidade Federal de Itajubá"
+  },
+  "worksFor": { "@type": "Organization", "name": "FunderPro" },
+  "sameAs": [
+    "https://github.com/rarysh",
+    "https://www.linkedin.com/in/_rarysh"
+  ],
+  "knowsLanguage": ["en", "pt-BR"],
+  "knowsAbout": [
+    "Node.js", "TypeScript", "NestJS", "Go", "Distributed Systems",
+    "Event-Driven Architecture", "Kafka", "BigQuery", "Kubernetes"
+  ]
+}
+</script>
+
+<!-- ============ CASE MODAL ============ -->
+<div class="modal" id="case-modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="case-modal-title">
+    <button class="modal__close" type="button" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M18 6 6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <div class="modal__scroll">
+      <p class="modal__meta" id="case-modal-meta"></p>
+      <h3 class="modal__title" id="case-modal-title"></h3>
+      <div class="modal__gallery">
+        <img class="modal__main" id="case-modal-hero" alt="">
+        <div class="modal__thumbs" id="case-modal-thumbs"></div>
+      </div>
+      <div class="modal__body" id="case-modal-body"></div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
