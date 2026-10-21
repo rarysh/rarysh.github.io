@@ -10,9 +10,9 @@
 
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Rarysh Costa Souza — Senior Backend Engineer">
-<meta property="og:description" content="Senior backend developer, 8+ years building distributed, event-driven systems and large-scale data processing.">
+<meta property="og:description" content="Senior backend engineer, 8+ years building distributed, event-driven systems and large-scale data processing.">
 <meta property="og:url" content="https://rarysh.github.io/">
-<meta property="og:image" content="https://rarysh.github.io/assets/img/og.png?v=3">
+<meta property="og:image" content="https://rarysh.github.io/assets/img/og.png?v=4">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2308090b'/><text x='16' y='23' font-family='ui-monospace,monospace' font-size='18' font-weight='600' fill='%237dd3a0' text-anchor='middle'>r</text></svg>">
@@ -46,7 +46,7 @@
   <section class="hero" id="top">
     <div class="wrap hero__grid">
       <div class="hero__inner">
-        <p class="hero__eyebrow"><span class="nav__dot" aria-hidden="true"></span> Senior Backend Developer</p>
+        <p class="hero__eyebrow"><span class="nav__dot" aria-hidden="true"></span> Senior Backend Engineer</p>
 
         <h1 class="hero__title" data-split>I build backends that <em>scale under load.</em></h1>
 
@@ -58,7 +58,7 @@
 
         <div class="hero__actions">
           <a class="btn btn--primary" href="#contact" data-magnetic>Get in touch</a>
-          <a class="btn" href="https://www.linkedin.com/in/_rarysh" rel="me noopener">LinkedIn</a>
+          <a class="btn" href="https://www.linkedin.com/in/rarysh" rel="me noopener">LinkedIn</a>
           <a class="btn" href="https://github.com/rarysh" rel="me noopener">GitHub</a>
         </div>
       </div>
@@ -75,16 +75,16 @@
     <div class="wrap">
       <dl class="stats">
         <div class="stat">
-          <dd><span data-count="8">0</span>+</dd>
+          <dd><span data-count="8">8</span>+</dd>
           <dt>Years building production systems</dt>
         </div>
         <div class="stat">
-          <dd><span data-count="1000">0</span>s</dd>
+          <dd><span data-count="1000">1000</span>s</dd>
           <dt>Requests per second at peak traffic</dt>
         </div>
         <div class="stat">
-          <dd><span data-count="7">0</span></dd>
-          <dt>Companies shipped for, fully remote</dt>
+          <dd><span data-count="8">8</span></dd>
+          <dt>Companies shipped for since 2018</dt>
         </div>
       </dl>
     </div>
@@ -120,7 +120,7 @@
 
       <article class="case" data-reveal>
         <div class="case__body">
-          <p class="case__kicker">SplitC · Tech Lead</p>
+          <p class="case__kicker">SplitC · Senior Backend Engineer → Tech Lead</p>
           <h3 class="case__title">Cut a data pipeline from 30 minutes to under 5</h3>
           <p class="case__desc">
             A data-intensive platform was processing millions of records per run on MySQL,
@@ -156,7 +156,7 @@
 
       <article class="case case--flip" data-reveal>
         <div class="case__body">
-          <p class="case__kicker">Grupo SOMA · Tech Lead</p>
+          <p class="case__kicker">Grupo SOMA · Senior Backend Engineer → Tech Lead</p>
           <h3 class="case__title">E-commerce that survives Black Friday</h3>
           <p class="case__desc">
             High-traffic retail systems handling thousands of requests per second, where the
@@ -186,30 +186,32 @@
       <article class="case" data-reveal>
         <div class="case__body">
           <p class="case__kicker">FunderPro · Senior Backend Engineer</p>
-          <h3 class="case__title">Multi-tenant trading platform</h3>
+          <h3 class="case__title">Money flows on a white-label trading platform</h3>
           <p class="case__desc">
-            Backend services for a proprietary trading platform serving multiple client
-            environments from one codebase, where each tenant needs its own behaviour
-            without forking the product.
+            Payments, payouts and the controls around them for a multi-tenant prop trading
+            platform, where every brand runs on one codebase and a wrong payout costs
+            real money.
           </p>
           <ul class="case__points">
-            <li>Implemented a feature flag architecture enabling per-client customisation at scale</li>
-            <li>Designed backend workflows for high-availability systems</li>
-            <li>Raised reliability with automated unit and E2E testing plus better background job processing</li>
+            <li>Built wallet checkout (Apple Pay, Google Pay) with retry across payment providers, and trader payouts through bank and crypto providers</li>
+            <li>Built payout fraud and risk controls: duplicate-account and payout-address detection with device fingerprinting, plus KYC expiry and name-mismatch checks</li>
+            <li>Replaced a third-party loyalty integration with an in-house points program, configurable per brand with feature flags</li>
+            <li>Cut vendor and infra costs, including a paid translation service replaced by a Claude API pipeline covering 8 languages</li>
+            <li>Led the TypeScript strict-mode migration across the NestJS monorepo</li>
           </ul>
           <ul class="card__tags">
-            <li>Node.js</li><li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>RabbitMQ</li>
+            <li>Node.js</li><li>NestJS</li><li>TypeScript</li><li>PostgreSQL</li><li>Redis</li><li>RabbitMQ</li>
           </ul>
         </div>
-        <figure class="metric" aria-label="One codebase serving many tenants via feature flags">
+        <figure class="metric" aria-label="One codebase serving many brands, each configured with feature flags">
           <figcaption class="metric__cap">Multi-tenant architecture</figcaption>
           <div class="tenants">
             <span class="tenants__core">core</span>
             <div class="tenants__fan">
-              <i>tenant A</i><i>tenant B</i><i>tenant C</i><i>tenant D</i>
+              <i>brand A</i><i>brand B</i><i>brand C</i><i>brand D</i>
             </div>
           </div>
-          <p class="metric__note">One codebase, per-client behaviour via flags</p>
+          <p class="metric__note">One codebase, loyalty configured per brand via flags</p>
         </figure>
       </article>
 
@@ -409,9 +411,10 @@
         <ul class="card__tags"><li>NestJS</li><li>PostgreSQL</li><li>RabbitMQ</li><li>Redis</li></ul>
         <div class="folio__full" hidden>
             <p>FunderPro is a prop trading firm: traders prove themselves on a challenge account, get funded, and trade the firm's capital with rewards paid out in hours rather than weeks. Everything behind that — accounts, rules, payouts — is backend work where being wrong costs real money.</p>
-            <p>I build the backend services for the platform, which serves multiple client environments from a single codebase. The feature flag architecture I implemented is what makes that possible: each tenant gets its own behaviour without forking the product.</p>
-            <p>Alongside that, I design backend workflows for high-availability systems, build the third-party integrations the platform depends on, and refactor existing code as new features land on top of it.</p>
-            <p>A lot of the work is unglamorous and matters most: better logging and observability, so production behaviour is diagnosable instead of guessed at, and automated unit and E2E coverage so releases are trustworthy. I lean on AI tooling to move faster through it without letting quality slip.</p>
+            <p>The platform is white-label: many brands run on one codebase. I work mainly on the money paths. I built wallet checkout with Apple Pay and Google Pay, retrying across payment providers when one fails, and the trader payout flows through bank and crypto providers.</p>
+            <p>Payouts need guarding, so I built the fraud and risk controls around them: risk checks, duplicate-account and duplicate payout-address detection backed by device fingerprinting, and KYC expiry and name-mismatch checks before money leaves.</p>
+            <p>I also replaced a third-party loyalty integration with an in-house points program (earn on paid purchases, redeem at checkout), configurable per brand with feature flags, and cut vendor and infrastructure costs, swapping a paid translation service for a Claude API pipeline covering 8 languages and trimming log volume and error-tracking noise.</p>
+            <p>On the codebase itself, I led the TypeScript strict-mode migration across the NestJS monorepo (strictNullChecks plus four more compiler rules) and hardened message-queue reconnects and scheduled-job error handling.</p>
             <div class="folio__shots">
               <img src="assets/img/work/funderpro-1.jpg?v=3" alt="FunderPro trading platform homepage" loading="lazy" decoding="async">
               <img src="assets/img/work/funderpro-2.jpg?v=3" alt="FunderPro how it works page" loading="lazy" decoding="async">
@@ -426,7 +429,7 @@
             <span class="folio__count">3 images</span>
           </span>
           <span class="folio__body">
-            <span class="folio__meta">StopChurn · Senior Fullstack Engineer</span>
+            <span class="folio__meta">StopChurn · Senior Backend Engineer</span>
             <span class="folio__title">StopChurn</span>
             <span class="folio__desc">Post-sale retention platform that turns an existing customer database into automated, personal re-engagement.</span>
             <span class="folio__cta">View project</span>
@@ -452,7 +455,7 @@
             <span class="folio__count">2 images</span>
           </span>
           <span class="folio__body">
-            <span class="folio__meta">SplitC · Tech Lead</span>
+            <span class="folio__meta">SplitC · Senior Backend Engineer → Tech Lead</span>
             <span class="folio__title">Calculation engine</span>
             <span class="folio__desc">An engine that automates any variable-compensation model, replacing error-prone manual work with auditable output.</span>
             <span class="folio__cta">View project</span>
@@ -463,7 +466,7 @@
             <p>Variable compensation is one of those processes that stays on spreadsheets far longer than it should. The rules get intricate, the structures get sophisticated, and every month someone recalculates by hand and hopes they got it right.</p>
             <p>SplitC models any calculation as a visual flow: data sources feed calculation nodes, which feed payouts and dashboards. It pulls from any system with an API, a database, or even a spreadsheet export, and integrates with the major CRM and ERP platforms.</p>
             <p>The platform also collects, validates and approves invoices in place, running compliance checks automatically — matching invoice values against payments, verifying tax IDs, flagging what fails before it becomes a problem.</p>
-            <p>I led the squad responsible for performance and scalability, including the BigQuery migration and the event-driven rework that cut the main pipeline from over 30 minutes to under 5.</p>
+            <p>As a senior backend engineer I migrated the commission engine's heavy workloads from MySQL to BigQuery, cutting processing time from over 30 minutes to under 5, and built event-driven processing on Pub/Sub. I then became tech lead of the squad responsible for performance and scalability.</p>
             <div class="folio__shots">
               <img src="assets/img/work/splitc.jpg?v=3" alt="SplitC node-based calculation flow editor" loading="lazy" decoding="async">
               <img src="assets/img/work/splitc-2.jpg?v=3" alt="Invoice validation screen with automated compliance checks" loading="lazy" decoding="async">
@@ -493,17 +496,14 @@
           <h3 class="role__title">Senior Backend Engineer</h3>
           <p class="role__org">FunderPro · Remote, International</p>
           <ul class="role__points">
-            <li>Developed backend services for a <strong>multi-tenant trading platform</strong> supporting multiple client environments.</li>
-            <li>Implemented <strong>feature flag architecture</strong> enabling scalable client customisation.</li>
-            <li>Built <strong>multiple third-party integrations</strong> across the platform.</li>
-            <li>Refactored existing code and shipped new features on top of it.</li>
-            <li>Improved <strong>logging and observability</strong>, making production behaviour diagnosable.</li>
-            <li>Improved system reliability through automated testing (unit + E2E) and better background job processing.</li>
-            <li>Designed backend workflows for high-availability systems.</li>
-            <li>Used <strong>AI tooling to increase delivery speed</strong> without trading away code quality.</li>
+            <li>Built <strong>payment and payout flows</strong>: wallet checkout (Apple Pay, Google Pay) with retry across payment providers, and trader payouts through bank and crypto providers.</li>
+            <li>Built <strong>fraud and risk controls</strong> for payouts: risk checks, duplicate-account and duplicate payout-address detection with device fingerprinting, and KYC expiry and name-mismatch checks.</li>
+            <li>Replaced a third-party loyalty integration with an <strong>in-house points program</strong> (earn on paid purchases, redeem at checkout), configurable per brand with feature flags.</li>
+            <li><strong>Cut vendor and infrastructure costs</strong>: replaced a paid translation service with a Claude API pipeline covering 8 languages, reduced log volume and indexed fields in the logging stack, and cut error-tracking noise.</li>
+            <li>Led the <strong>TypeScript strict-mode migration</strong> across the NestJS monorepo (strictNullChecks plus 4 more compiler rules), and hardened message-queue reconnects and scheduled-job error handling.</li>
           </ul>
           <ul class="role__stack">
-            <li>Node.js</li><li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>RabbitMQ</li>
+            <li>Node.js</li><li>NestJS</li><li>TypeScript</li><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li><li>RabbitMQ</li>
           </ul>
         </div>
       </article>
@@ -513,7 +513,7 @@
           <p class="role__period">Jul 2025 — Nov 2025</p>
         </div>
         <div>
-          <h3 class="role__title">Senior Fullstack Engineer</h3>
+          <h3 class="role__title">Senior Backend Engineer</h3>
           <p class="role__org">StopChurn · Remote, International</p>
           <ul class="role__points">
             <li><strong>Stabilised a legacy system</strong> with critical reliability issues and limited documentation.</li>
@@ -529,39 +529,69 @@
 
       <article class="role" data-reveal>
         <div class="role__meta">
-          <p class="role__period">Sep 2022 — Jul 2025</p>
+          <p class="role__period">Jan 2025 — Jul 2025</p>
           <span class="role__badge">Tech Lead</span>
         </div>
         <div>
-          <h3 class="role__title">Tech Lead / Senior Backend Engineer</h3>
+          <h3 class="role__title">Tech Lead</h3>
           <p class="role__org">SplitC · Remote</p>
           <ul class="role__points">
-            <li>Led a squad focused on <strong>performance and scalability</strong> of a data-intensive platform.</li>
-            <li>Designed solutions for large-scale data processing handling <strong>millions of records</strong>.</li>
-            <li>Reduced processing time from <strong>30+ minutes to under 5 minutes</strong>.</li>
-            <li>Migrated workloads from MySQL to BigQuery, improving performance and cost efficiency.</li>
-            <li>Built event-driven systems using Pub/Sub and background job processing.</li>
-            <li>Contributed to hiring and technical evaluations.</li>
-          </ul>
-          <ul class="role__stack">
-            <li>Node.js</li><li>NestJS</li><li>Go</li><li>TypeScript</li><li>BigQuery</li><li>GCP</li><li>Pub/Sub</li><li>AWS</li>
+            <li>Led a squad focused on <strong>performance and scalability</strong> of a data-heavy platform.</li>
+            <li>Defined technical approaches for large-scale data processing.</li>
+            <li>Conducted technical interviews and candidate evaluations.</li>
+            <li>Worked with the other leads to align priorities and technical decisions.</li>
           </ul>
         </div>
       </article>
 
       <article class="role" data-reveal>
         <div class="role__meta">
-          <p class="role__period">Sep 2021 — Sep 2022</p>
+          <p class="role__period">Sep 2022 — Jan 2025</p>
+        </div>
+        <div>
+          <h3 class="role__title">Senior Backend Engineer</h3>
+          <p class="role__org">SplitC · Remote</p>
+          <ul class="role__points">
+            <li>Migrated the commission engine's heavy workloads from MySQL to BigQuery, cutting processing time from <strong>30+ minutes to under 5</strong>.</li>
+            <li>Built data processing pipelines handling <strong>millions of records</strong>.</li>
+            <li>Built event-driven processing on Pub/Sub and background jobs, in Node.js and Go.</li>
+            <li>Refactored core parts of the system to improve performance and reliability.</li>
+            <li>Built an AI chat feature and AI-based formula suggestions using <strong>Vertex AI</strong>.</li>
+          </ul>
+          <ul class="role__stack">
+            <li>Node.js</li><li>NestJS</li><li>Go</li><li>TypeScript</li><li>BigQuery</li><li>GCP</li><li>Pub/Sub</li><li>Vertex AI</li><li>AWS</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">May 2022 — Sep 2022</p>
           <span class="role__badge">Tech Lead</span>
         </div>
         <div>
-          <h3 class="role__title">Tech Lead / Senior Backend Engineer</h3>
+          <h3 class="role__title">Tech Lead</h3>
           <p class="role__org">Grupo SOMA · Remote</p>
           <ul class="role__points">
-            <li>Led development of <strong>high-traffic e-commerce systems</strong> handling thousands of requests per second.</li>
-            <li>Built middleware layer connecting systems to the VTEX checkout flow.</li>
-            <li>Improved system resilience for peak events such as Black Friday through load testing.</li>
-            <li>Coordinated a team of engineers and contributed to architectural decisions.</li>
+            <li>Led development of <strong>SomaLive</strong>, a live commerce platform with thousands of active users.</li>
+            <li>Led the evolution of the checkout middleware across all of SOMA's brands.</li>
+            <li>Led a team of ~5 engineers and owned the team's architecture decisions.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">Sep 2021 — May 2022</p>
+        </div>
+        <div>
+          <h3 class="role__title">Senior Backend Engineer</h3>
+          <p class="role__org">Grupo SOMA · Remote</p>
+          <ul class="role__points">
+            <li>Took ownership of the <strong>VTEX checkout middleware</strong> I had built as a consultant, connecting multiple brands' applications to the checkout flow.</li>
+            <li>Designed and implemented key parts of the system, from architecture to deployment.</li>
+            <li>Prepared the system for Black Friday, handling <strong>thousands of requests per second</strong>.</li>
+            <li>Ran load tests and improved stability under heavy usage.</li>
           </ul>
           <ul class="role__stack">
             <li>Node.js</li><li>NestJS</li><li>TypeScript</li><li>GraphQL</li><li>Redis</li><li>Kafka</li><li>GCP</li>
@@ -574,12 +604,12 @@
           <p class="role__period">Oct 2020 — Aug 2021</p>
         </div>
         <div>
-          <h3 class="role__title">Software Engineer</h3>
+          <h3 class="role__title">Mid-level Software Engineer</h3>
           <p class="role__org">Digital Republic · Remote</p>
           <ul class="role__points">
-            <li>Worked across multiple full-stack projects in different domains.</li>
-            <li>Built integrations with third-party APIs and backend systems.</li>
-            <li>Developed features for marketplace and CMS platforms.</li>
+            <li>Built the <strong>VTEX checkout middleware</strong> for client Grupo SOMA, which led to SOMA hiring me directly.</li>
+            <li>Developed features for a mentoring marketplace and a high-visibility Stock Car application.</li>
+            <li>Built integrations with third-party APIs across CMS and management platforms.</li>
           </ul>
           <ul class="role__stack">
             <li>Node.js</li><li>React</li><li>TypeScript</li><li>MongoDB</li><li>PostgreSQL</li><li>AWS</li><li>GCP</li>
@@ -592,32 +622,15 @@
           <p class="role__period">Mar 2019 — Apr 2020</p>
         </div>
         <div>
-          <h3 class="role__title">IT Analyst</h3>
+          <h3 class="role__title">Software Engineer</h3>
           <p class="role__org">TR Soluções</p>
           <ul class="role__points">
-            <li>Contributed to migration from <strong>monolith to microservices</strong> using Quarkus.</li>
+            <li>Contributed to migrating a Java monolith into <strong>microservices</strong> using Quarkus (~5 services).</li>
             <li>Implemented infrastructure with Docker and Kubernetes.</li>
             <li>Improved code quality and observability using Prometheus and Grafana.</li>
           </ul>
           <ul class="role__stack">
             <li>Java</li><li>Quarkus</li><li>Docker</li><li>Kubernetes</li><li>MySQL</li><li>PostgreSQL</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="role" data-reveal>
-        <div class="role__meta">
-          <p class="role__period">2018 — 2019</p>
-        </div>
-        <div>
-          <h3 class="role__title">Developer</h3>
-          <p class="role__org">byron.solutions</p>
-          <ul class="role__points">
-            <li>Worked on web applications across domains including logistics and small business systems.</li>
-            <li>Built frontend interfaces and backend features for client projects.</li>
-          </ul>
-          <ul class="role__stack">
-            <li>JavaScript</li><li>PHP</li><li>SQL</li><li>Bootstrap</li>
           </ul>
         </div>
       </article>
@@ -641,6 +654,22 @@
           </ul>
           <ul class="role__stack">
             <li>PHP</li><li>JavaScript</li><li>SQL</li><li>Bootstrap</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role" data-reveal>
+        <div class="role__meta">
+          <p class="role__period">Jan 2018 — Aug 2018</p>
+        </div>
+        <div>
+          <h3 class="role__title">Developer</h3>
+          <p class="role__org">byron.solutions</p>
+          <ul class="role__points">
+            <li>Front-end work on early-stage web projects: WordPress sites and small single-page apps.</li>
+          </ul>
+          <ul class="role__stack">
+            <li>JavaScript</li><li>jQuery</li><li>WordPress</li><li>Bootstrap</li>
           </ul>
         </div>
       </article>
@@ -728,13 +757,13 @@
     <div class="contact" data-reveal>
       <h2>Let's talk.</h2>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="https://www.linkedin.com/in/_rarysh" rel="me noopener" data-magnetic>Message me on LinkedIn</a>
+        <a class="btn btn--primary" href="https://www.linkedin.com/in/rarysh" rel="me noopener" data-magnetic>Message me on LinkedIn</a>
         <a class="btn" href="https://github.com/rarysh" rel="me noopener">GitHub</a>
       </div>
     </div>
 
     <footer class="footer">
-      <span>© 2026 Rarysh Costa Souza · Itajubá, MG, Brazil</span>
+      <span>© 2026 Rarysh Costa Souza · São José dos Campos, SP, Brazil</span>
       <span>Hand-written HTML &amp; CSS. No framework.</span>
     </footer>
   </section>
@@ -750,8 +779,8 @@
   "jobTitle": "Senior Backend Engineer",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Itajubá",
-    "addressRegion": "MG",
+    "addressLocality": "São José dos Campos",
+    "addressRegion": "SP",
     "addressCountry": "BR"
   },
   "alumniOf": {
@@ -761,7 +790,7 @@
   "worksFor": { "@type": "Organization", "name": "FunderPro" },
   "sameAs": [
     "https://github.com/rarysh",
-    "https://www.linkedin.com/in/_rarysh"
+    "https://www.linkedin.com/in/rarysh"
   ],
   "knowsLanguage": ["en", "pt-BR"],
   "knowsAbout": [
